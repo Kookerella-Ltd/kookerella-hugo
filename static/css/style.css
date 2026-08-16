@@ -150,6 +150,25 @@ pre code {
 .recent-posts { margin-top: 2.5rem; }
 .see-all { font-weight: 600; }
 
+.product-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+.product-card {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.product-card:first-child { padding-top: 0; }
+.product-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.product-name {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.product-card p { color: var(--muted); margin: 0.5rem 0; }
+.product-links { display: flex; gap: 1.25rem; }
+.product-links a { font-weight: 600; }
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0;

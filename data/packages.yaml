@@ -1,0 +1,5 @@
+- name: CsExcel
+  version: "1.0.2"
+  description: "A C# wrapper around FsExcel — an F# library for writing Excel workbooks via ClosedXML, using a flat, declarative list of instructions rather than ClosedXML's cell-by-cell object model."
+  nuget: https://www.nuget.org/packages/CsExcel
+  github: https://github.com/Kookerella-Ltd/CsExcel

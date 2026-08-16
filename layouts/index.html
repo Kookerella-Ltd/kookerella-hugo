@@ -2,18 +2,4 @@
 <section class="hero">
   {{ .Content }}
 </section>
-
-<section class="recent-posts">
-  <h2>Latest writing</h2>
-  <ul class="post-list">
-    {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
-    <li>
-      <a class="post-list-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span class="post-list-date">{{ .Date.Format "2 January 2006" }}</span>
-      <p>{{ .Summary }}</p>
-    </li>
-    {{ end }}
-  </ul>
-  <a class="see-all" href="{{ "/posts/" | relURL }}">See all posts &rarr;</a>
-</section>
 {{ end }}
