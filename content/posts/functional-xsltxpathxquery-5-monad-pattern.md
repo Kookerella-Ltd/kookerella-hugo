@@ -1,11 +1,11 @@
 ---
-title: "Functional XSLT/XPath/XQuery - #4 Monad pattern"
+title: "Functional XSLT/XPath/XQuery - #5 Monad pattern"
 date: 2024-06-15
-slug: "functional-xsltxpathxquery-4-monad-pattern"
+slug: "functional-xsltxpathxquery-5-monad-pattern"
 tags: ["xslt", "xpath", "xquery", "functional-programming", "monad"]
 ---
 
-# Functional XSLT/XPath/XQuery - #4 Monad pattern
+# Functional XSLT/XPath/XQuery - #5 Monad pattern
 
 The monad is probably the most written about functional pattern, it is famous for convoluted and obtuse explanations, but I will steal some of the better explanations and translate them into XSLT/XPath.
 
