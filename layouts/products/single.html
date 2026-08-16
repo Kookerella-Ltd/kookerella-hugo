@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="post">
+  <div class="product-card-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.version }}<span class="tag">v{{ . }}</span>{{ end }}
+  </div>
+  <div class="product-links">
+    {{ with .Params.nuget }}<a href="{{ . }}">NuGet &rarr;</a>{{ end }}
+    {{ with .Params.github }}<a href="{{ . }}">GitHub &rarr;</a>{{ end }}
+  </div>
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

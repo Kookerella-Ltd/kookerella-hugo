@@ -122,6 +122,6 @@ git push
 
 ## GitHub repos on the homepage
 
-The GitHub link in the nav bar and footer currently points at
-`https://github.com/kookerella` — update that in `hugo.toml` under
-`[params] github = "..."` to your actual org URL.
+The GitHub link in the nav bar and footer points at
+`https://github.com/kookerella-ltd`, set in `hugo.toml` under
+`[params] github = "..."`.

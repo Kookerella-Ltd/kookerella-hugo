@@ -2,16 +2,16 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <ul class="product-list">
-  {{ range .Site.Data.packages }}
+  {{ range .Pages }}
   <li class="product-card">
     <div class="product-card-header">
-      <span class="product-name">{{ .name }}</span>
-      {{ with .version }}<span class="tag">v{{ . }}</span>{{ end }}
+      <a class="product-name" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Params.version }}<span class="tag">v{{ . }}</span>{{ end }}
     </div>
-    <p>{{ .description }}</p>
+    <p>{{ .Params.summary }}</p>
     <div class="product-links">
-      {{ with .nuget }}<a href="{{ . }}">NuGet &rarr;</a>{{ end }}
-      {{ with .github }}<a href="{{ . }}">GitHub &rarr;</a>{{ end }}
+      {{ with .Params.nuget }}<a href="{{ . }}">NuGet &rarr;</a>{{ end }}
+      {{ with .Params.github }}<a href="{{ . }}">GitHub &rarr;</a>{{ end }}
     </div>
   </li>
   {{ end }}

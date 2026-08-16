@@ -164,7 +164,12 @@ pre code {
 .product-name {
   font-weight: 600;
   font-size: 1.15rem;
+  color: var(--fg);
 }
+.product-name:hover { color: var(--accent); text-decoration: none; }
+.post .product-card-header { gap: 0.75rem; margin-bottom: 0.25rem; }
+.post .product-card-header h1 { margin: 0; }
+.post .product-links { margin-bottom: 1.5rem; }
 .product-card p { color: var(--muted); margin: 0.5rem 0; }
 .product-links { display: flex; gap: 1.25rem; }
 .product-links a { font-weight: 600; }
