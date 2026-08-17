@@ -1,5 +1,61 @@
 {{ define "main" }}
 <section class="hero">
-  {{ .Content }}
+  <h1>Software and systems integration for broadcast</h1>
+  <p>Kookerella is a specialist software development consultancy founded to deliver system
+  integrations, tooling and reporting development for media organisations in the broadcast
+  and VOD sector.</p>
+</section>
+
+<section class="feature-row accent-teal">
+  <div class="feature-text">
+    <h2>Simple, reliable engineering</h2>
+    <p>Our focus is on simple, reliable solutions where the focus is on delivering value, not
+    delivering technology for technology's sake, but we have over the years developed
+    particular areas of specialist knowledge.</p>
+    <ul class="feature-list">
+      <li><strong>Broadcast &amp; VOD systems</strong> — system integrations, tooling, and reporting for media organisations</li>
+      <li><strong>Deep XSLT experience</strong> — from everyday transforms to functional patterns like Maybe and Monad</li>
+      <li><strong>Polyglot by necessity</strong> — F#, C#, and Scala, whichever fits the problem</li>
+    </ul>
+    <a class="feature-link" href="{{ "/posts/functional-xsltxpathxquery-3-maybe-data-type/" | relURL }}">Read how this works &rarr;</a>
+  </div>
+  <div class="feature-code">
+    <div class="code-panel">
+      <div class="code-panel-tab">SafeDivision.xslt</div>
+      <pre><code>&lt;xsl:function name="kooks:safeDivision" as="xs:numeric?"&gt;
+    &lt;xsl:param name="numerator" as="xs:numeric"/&gt;
+    &lt;xsl:param name="denominator" as="xs:numeric"/&gt;
+    &lt;xsl:if test="not($denominator eq 0)"&gt;
+        &lt;xsl:sequence select="$numerator div $denominator"/&gt;
+    &lt;/xsl:if&gt;
+&lt;/xsl:function&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="feature-row feature-row-reverse accent-pink">
+  <div class="feature-text">
+    <h2>Open-source, when it's useful</h2>
+    <p>CsExcel brings a declarative, functional way to generate Excel workbooks to C#: you
+    build a workbook as an immutable sequence of instructions, not an object you mutate cell
+    by cell.</p>
+    <ul class="feature-list">
+      <li><strong>CsExcel</strong> — a C# wrapper around FsExcel for building Excel workbooks declaratively</li>
+      <li><strong>Published on NuGet</strong>, source on GitHub</li>
+      <li><strong>PolyForm Noncommercial</strong> licensed — free to use and modify</li>
+    </ul>
+    <a class="feature-link" href="{{ "/products/csexcel/" | relURL }}">See the CsExcel docs &rarr;</a>
+  </div>
+  <div class="feature-code">
+    <div class="code-panel">
+      <div class="code-panel-tab">HelloWorld.cs</div>
+      <pre><code>var cells = new[]
+{
+    Cell([ String("Hello World") ])
+};
+
+CsExcel.Render.AsFile(cells, @"c:\temp\HelloWorld.xlsx");</code></pre>
+    </div>
+  </div>
 </section>
 {{ end }}

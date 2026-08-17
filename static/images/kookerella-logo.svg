@@ -1,0 +1,10 @@
+<svg width="380" height="110" viewBox="0 0 380 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kookerella logo">
+  <rect x="10" y="13" width="84" height="84" rx="20" fill="#FFFFFF" stroke="#D9D8D2" stroke-width="1"/>
+  <text x="31" y="43" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#185FA5">k</text>
+  <text x="73" y="43" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#534AB7">e</text>
+  <text x="31" y="85" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#0F6E56">l</text>
+  <text x="73" y="85" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#993556">a</text>
+  <text x="124" y="69" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="40" font-weight="500">
+    <tspan fill="#185FA5">kook</tspan><tspan fill="#534AB7">ere</tspan><tspan fill="#0F6E56">ll</tspan><tspan fill="#993556">a</tspan>
+  </text>
+</svg>

@@ -1,10 +1,22 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ "/" | relURL }}">Kookerella</a>
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="Kookerella home">
+      <svg class="brand-mark" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <rect x="10" y="10" width="84" height="84" rx="20" class="brand-mark-bg" stroke="var(--border)" stroke-width="1"/>
+        <text x="31" y="40" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#185FA5">k</text>
+        <text x="73" y="40" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#534AB7">e</text>
+        <text x="31" y="82" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#0F6E56">l</text>
+        <text x="73" y="82" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#993556">a</text>
+      </svg>
+      <span class="brand-word">
+        <span class="brand-k">kook</span><span class="brand-e">ere</span><span class="brand-l">ll</span><span class="brand-a">a</span>
+      </span>
+    </a>
     <nav>
       {{ range .Site.Menus.main }}
         <a href="{{ .URL }}">{{ .Name }}</a>
       {{ end }}
+      <a class="btn btn-primary btn-sm" href="{{ "/contact/" | relURL }}">Get in touch</a>
     </nav>
   </div>
 </header>

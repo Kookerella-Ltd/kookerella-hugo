@@ -1,6 +1,18 @@
 <footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="{{ "/posts/" | relURL }}">Blog</a>
+      <a href="{{ "/products/" | relURL }}">Products</a>
+    </div>
+    <div class="footer-col">
+      <h3>Connect</h3>
+      <a href="{{ .Site.Params.github }}">GitHub</a>
+      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      <a href="{{ "index.xml" | relURL }}">RSS</a>
+    </div>
+  </div>
   <div class="container">
-    <p>&copy; {{ now.Year }} Kookerella. Contact <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>.</p>
-    <p><a href="{{ .Site.Params.github }}">GitHub</a> · <a href="{{ "index.xml" | relURL }}">RSS</a></p>
+    <p class="footer-copy">&copy; {{ now.Year }} Kookerella</p>
   </div>
 </footer>

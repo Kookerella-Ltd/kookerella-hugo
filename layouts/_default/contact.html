@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="hero hero-compact">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="contact-links">
+    <a class="btn btn-primary" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    <a class="btn btn-secondary" href="{{ .Site.Params.github }}">GitHub &rarr;</a>
+  </div>
+</section>
+{{ end }}
